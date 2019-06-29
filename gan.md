@@ -151,8 +151,8 @@ the code are minist-gan.ipynb
 
 
 ## TODO
-- [ ] GAN idea
-- [ ] GAN architecture
-- [ ] GAN loss
-- [ ] GAN train function
+- [x] GAN idea
+- [x] GAN architecture
+- [x] GAN loss
+- [x] GAN train function
 - [ ] GAN code recurrent
