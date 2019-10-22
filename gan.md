@@ -45,7 +45,7 @@ $D$ -> Discriminator, a network, input: $x$ or $G(z)$(the Generator output), out
 
 ![](images/批注&#32;2019-06-28&#32;164240.png)
 <!-- reference: https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html#what-is-a-gan -->
-The goal of $G$ is to estimate the distribution that the training data comes from $p_data$, so it can generate fake samples from that estimated distribution($p_g$)。
+The goal of $G$ is to estimate the distribution that the training data comes from $p_{data}$, so it can generate fake samples from that estimated distribution($p_g$)。
 
 So, $D(G(z))$ is the probability that the output of the generator $G$ is a real images. As described in [Goodfellow's paper](#http://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf), $D$ and $G$ play a minimax game in which $D$ tries to maximize the probability it correctly classifies reals and fakes($logD(x)$), and G tries to minimize the probability that D will predict its outputs are fake($log(1-D(G(x)))$).
 From the paper, the GAN loss function is
