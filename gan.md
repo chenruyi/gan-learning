@@ -103,7 +103,7 @@ So,
 $\begin{aligned}
     C(G)&=\mathbb{E}_{x\sim p_{data}}[log{\frac{p_{data}(x)}{p_{data}(x)+p_g(x)}}]+\mathbb{E}_{x\sim p_g}[log{\frac{p_g(x)}{p_{data}(x)+p_g(x)}}]-0\\
         &=-log4+\mathbb{E}_{x\sim p_{data}}[log{\frac{p_{data}(x)}{\frac{p_{data}(x)+p_g(x)}{2}}}]+\mathbb{E}_{x\sim p_g}[log{\frac{p_g(x)}{\frac{p_{data}(x)+p_g(x)}{2}}}]\\
-        &=-log4+KL \left( p_{data}||\frac{p_{data}+p_g}{2} \right) + KL\left( p_{g}||\frac{p_{data}+p_g}{2}\right)\\&=-log4+2\cdot JSD\left(P_{data}||p_g \right)
+        &=-log4+KL \left( p_{data}||\frac{p_{data}+p_g}{2} \right) + KL\left( p_{g}||\frac{p_{data}+p_g}{2}\right)\\&=-log4+2\cdot JSD\left(p_{data}||p_g \right)
 \end{aligned}$
 So the Jensen-Shannon divergence(JSD) between two distributions is always not-negative and zero only when they are equal, so the prove only $p_g=p_{data}$, the $C(G)$ reach the global minimum. The $p_g=p_{data}$ i.e., the generative reproduce the fake data, which looks like the real.
 
